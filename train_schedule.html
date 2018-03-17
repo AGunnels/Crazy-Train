@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <title>Train Wreck</title>
+</head>
+
+<body>
+    <div class="col-lg-2">
+        <div class="col-lg-10">
+            <div class="jumbotron">
+                <h1>
+                    <strong>Train Wreck</strong>
+                </h1>
+                <p>Updated Train Schedules</p>
+            </div>
+            <div class="infoPanel panel panel-default">
+                <div class="panel-heading">Current Train Schedule</div>
+                <div class="panel-body" id=trainSchedule>
+                    <table class="col-med-12">
+                        <thead>
+                            <tr>
+                                <th class="trainName col-lg-3">Train Name</th>
+                                <th class="destination col-lg-3">Destination</th>
+                                <th class="frequency col-lg-2">Frequency</th>
+                                <th class="nextArrival col-lg-2">Next Arrival</th>
+                                <th class="minAway col-lg-3">Minutes Away</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="userPanel panel panel-default">
+                <div class="panel panel-heading">Add Train</div>
+                <div class="panel-body">Train Name:
+                    <div class="input-group col-lg-12">
+                        <input type="text" class="form-control" id="trainName" placeholder="Crazy Train" aria-describedby="basic-addon2">
+                    </div>
+                </div>
+                <div class="panel-body">Destination:
+                    <div class="input-group col-lg-12">
+                        <input type="text" class="form-control" id="destination" placeholder="Cleveland, OH" aria-describedby="basic-addon2">
+                    </div>
+                </div>
+                <div class="panel-body">First Train Time (HH:mm - military time):
+                    <div class="input-group col-lg-12">
+                        <input type="text" class="form-control" id="trainTime" placeholder="1300" aria-describedby="basic-addon2">
+                    </div>
+                </div>
+                <div class="panel-body">Frequency:
+                    <div class="input-group col-lg-12">
+                        <input type="text" class="form-control" id="frequency" placeholder="60" aria-describedby="basic-addon2">
+                    </div>
+                </div>
+                <button class="submitInfo">Submit <span class="glyphicon glyphicon-bed"></span></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://momentjs.com/downloads/moment.js"></script>
+    <script src="./assets/javascript/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+*{
+	box-sizing: border-box;
+}
+table{
+	border: solid 1px grey;
+	background-color: white;
+}
+
+td{
+	border: solid 1px grey;
+	color: black;
+	text-align: center;
+	font-weight: 600;
+}
+
+th{
+	text-align: center;
+	background-color: #ABB2B9;
+	border: solid 1px grey;
+}
+
+
+
+body{
+	background-image: url(http://www.publicdomainpictures.net/pictures/200000/velka/train-station-platform-1475044035rCp.jpg);
+}
+.form-control{
+	background-color: #DDD;
+}
+.userPanel, .infoPanel{
+	opacity: .9;
+	background-color: black;
+	color: white;
+}
+
+.jumbotron{
+	text-align: center;
+	background-color: #F37735;
+	color: white;
+	opacity: .97;
+	border: solid 3px white;
+	border-radius: 5px;
+	height:;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+button{
+	margin: 10px;
+	padding: 3px 5px;
+	background-color: #00B159;
+	border: 2px solid green;
+	color: white;
+}
+
+td{
+	border-spacing: 200px;
+}
+
+button:hover {
+	cursor: pointer;
+	border: 2px solid #00B159;
+	background-color: green;
+}
